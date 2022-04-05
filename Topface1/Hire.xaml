@@ -1,0 +1,19 @@
+﻿<Window x:Class="Topface1.Hire"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Topface1"
+        mc:Ignorable="d"
+        Title="Hire" Height="468.679" Width="455.283">
+    <Grid>
+        <TextBox HorizontalAlignment="Left" Height="41" Margin="61,96,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="310" Background="#FFE6E6E6"/>
+        <TextBox HorizontalAlignment="Left" Height="41" Margin="61,263,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="310" Background="#FFE6E6E6"/>
+        <TextBox HorizontalAlignment="Left" Height="41" Margin="61,178,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="310" Background="#FFE6E6E6"/>
+        <Label Content="Surname" HorizontalAlignment="Left" Margin="61,57,0,0" VerticalAlignment="Top" FontSize="22"/>
+        <Label Content="Name" HorizontalAlignment="Left" Margin="61,140,0,0" VerticalAlignment="Top" FontSize="22"/>
+        <Label Content="Patronymic" HorizontalAlignment="Left" Margin="61,225,0,0" VerticalAlignment="Top" FontSize="22"/>
+        <Button Content="Hire" HorizontalAlignment="Left" Height="40" Margin="129,358,0,0" VerticalAlignment="Top" Width="164" FontSize="20" Click="Button_Click"/>
+
+    </Grid>
+</Window>

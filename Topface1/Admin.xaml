@@ -1,0 +1,24 @@
+﻿<Window x:Class="Topface1.Admin"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Topface1"
+        mc:Ignorable="d"
+        Title="Admin" Height="454.313" Width="615.975">
+    <Grid>
+        <Grid Height="423" VerticalAlignment="Top">
+            <Grid.Background>
+                <ImageBrush ImageSource="img/23.jpg"/>
+            </Grid.Background>
+            <Image Margin="0,0,0,343" Source="img/broe.JPG" Stretch="Fill"/>
+            <Image Margin="10,2,443,356" Source="img/top.JPG" Stretch="Fill"/>
+            <Button x:Name="Supplier" Content="Suppliers" HorizontalAlignment="Left" Height="40" Margin="0,229,0,0" VerticalAlignment="Top" Width="608" FontSize="20" FontFamily="Stencil" BorderBrush="#FFF2D8BD" Background="#FFE4B686" Cursor="Hand" Click="Supplier_Click"/>
+            <TextBox HorizontalAlignment="Left" Height="40" Margin="0,106,0,0" TextWrapping="Wrap" Text="Category" VerticalAlignment="Top" Width="608" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Stencil" FontSize="20" Background="#FFE4B686"/>
+            <Button x:Name="Women" Content="Cosmetic for women" HorizontalAlignment="Left" Height="26" Margin="0,146,0,0" VerticalAlignment="Top" Width="608" Background="#FFF2D8BD" Foreground="#FFE583FB" FontFamily="Segoe Print" Click="Wo_Click"/>
+            <Button x:Name="Men" Content="Cosmetic for men" HorizontalAlignment="Left" Height="26" Margin="0,171,0,0" VerticalAlignment="Top" Width="608" Background="#FFF2D8BD" Foreground="#FF4962FF" FontFamily="Segoe Print" Click="Men_Click"/>
+            <Button x:Name="Employe" Content="Employee" HorizontalAlignment="Left" Height="40" Margin="0,302,0,0" VerticalAlignment="Top" Width="608" FontSize="20" FontFamily="Stencil" BorderBrush="#FFF2D8BD" Background="#FFE4B686" Cursor="Hand" Click="Employe_Click" />
+
+        </Grid>
+    </Grid>
+</Window>

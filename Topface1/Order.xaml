@@ -1,0 +1,15 @@
+﻿<Window x:Class="Topface1.Order"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Topface1"
+        mc:Ignorable="d"
+        Title="Order" Height="441.892" Width="299.324">
+    <Grid>
+        <ComboBox x:Name="ORD" HorizontalAlignment="Left" Height="34" Margin="22,28,0,0" VerticalAlignment="Top" Width="245" SelectionChanged="ORD_SelectionChanged"/>
+        <DataGrid x:Name="Fly" HorizontalAlignment="Left" Height="220" Margin="22,106,0,0" VerticalAlignment="Top" Width="245"/>
+        <Button Content="Order" HorizontalAlignment="Left" Height="34" Margin="73,356,0,0" VerticalAlignment="Top" Width="155" Click="Button_Click_1"/>
+
+    </Grid>
+</Window>

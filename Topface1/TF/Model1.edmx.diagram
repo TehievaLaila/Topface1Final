@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="2c3a3382284747cea7dacc89c02b91c5" Name="Diagram1" ZoomLevel="131">
+        <EntityTypeShape EntityType="TopfaceModel.Category" Width="1.5" PointX="1.5" PointY="19.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="TopfaceModel.Deliveries" Width="1.5" PointX="3" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TopfaceModel.Employee" Width="1.5" PointX="0.75" PointY="9.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="TopfaceModel.ExpirationDate" Width="1.5" PointX="3.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TopfaceModel.PodCategory" Width="1.5" PointX="3.75" PointY="19.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="TopfaceModel.Post" Width="1.5" PointX="1.5" PointY="13.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="TopfaceModel.Product" Width="1.5" PointX="6" PointY="3.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="TopfaceModel.Role" Width="1.5" PointX="2.75" PointY="8.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="TopfaceModel.Supplier" Width="1.5" PointX="0.75" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TopfaceModel.sysdiagrams" Width="1.5" PointX="7.75" PointY="7.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="TopfaceModel.User" Width="1.5" PointX="2.75" PointY="21.875" IsExpanded="true" />
+        <AssociationConnector Association="TopfaceModel.FK_PodCategory_Category" ManuallyRouted="false" />
+        <AssociationConnector Association="TopfaceModel.FK_Deliveries_Employee" ManuallyRouted="false" />
+        <AssociationConnector Association="TopfaceModel.FK_Deliveries_Supplier" ManuallyRouted="false" />
+        <AssociationConnector Association="TopfaceModel.FK_Employee_Post" ManuallyRouted="false" />
+        <AssociationConnector Association="TopfaceModel.FK_Product_ExpirationDate" ManuallyRouted="false" />
+        <AssociationConnector Association="TopfaceModel.FK_Product_PodCategory" ManuallyRouted="false" />
+        <AssociationConnector Association="TopfaceModel.FK_Product_Supplier" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="TopfaceModel.Autorization" Width="1.5" PointX="5" PointY="14.875" />
+        <AssociationConnector Association="TopfaceModel.FK_Autorization_Role" />
+        <AssociationConnector Association="TopfaceModel.FK_Autorization_User" />
+        <AssociationConnector Association="TopfaceModel.FK_Supplier_PodCategory" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

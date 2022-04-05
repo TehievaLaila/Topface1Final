@@ -1,0 +1,70 @@
+﻿<Window x:Class="Topface1.Men"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Topface1"
+        mc:Ignorable="d"
+        Title="Men" Height="450" Width="691.803">
+    <Window.Resources>
+        <SolidColorBrush x:Key="TextBox.Static.Border" Color="#FFABAdB3"/>
+        <SolidColorBrush x:Key="TextBox.MouseOver.Border" Color="#FF7EB4EA"/>
+        <SolidColorBrush x:Key="TextBox.Focus.Border" Color="#FF569DE5"/>
+        <Style x:Key="search" TargetType="{x:Type TextBox}">
+            <Setter Property="Background" Value="{DynamicResource {x:Static SystemColors.WindowBrushKey}}"/>
+            <Setter Property="BorderBrush" Value="{StaticResource TextBox.Static.Border}"/>
+            <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="KeyboardNavigation.TabNavigation" Value="None"/>
+            <Setter Property="HorizontalContentAlignment" Value="Left"/>
+            <Setter Property="FocusVisualStyle" Value="{x:Null}"/>
+            <Setter Property="AllowDrop" Value="true"/>
+            <Setter Property="ScrollViewer.PanningMode" Value="VerticalFirst"/>
+            <Setter Property="Stylus.IsFlicksEnabled" Value="False"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type TextBox}">
+                        <Border x:Name="border" CornerRadius="10" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Background="{TemplateBinding Background}" SnapsToDevicePixels="True">
+                            <ScrollViewer x:Name="PART_ContentHost" Focusable="false" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Hidden" Cursor="IBeam"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsEnabled" Value="false">
+                                <Setter Property="Opacity" TargetName="border" Value="0.56"/>
+                            </Trigger>
+                            <Trigger Property="IsMouseOver" Value="true">
+                                <Setter Property="BorderBrush" TargetName="border" Value="{StaticResource TextBox.MouseOver.Border}"/>
+                            </Trigger>
+                            <Trigger Property="IsKeyboardFocused" Value="true">
+                                <Setter Property="BorderBrush" TargetName="border" Value="{StaticResource TextBox.Focus.Border}"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Style.Triggers>
+                <MultiTrigger>
+                    <MultiTrigger.Conditions>
+                        <Condition Property="IsInactiveSelectionHighlightEnabled" Value="true"/>
+                        <Condition Property="IsSelectionActive" Value="false"/>
+                    </MultiTrigger.Conditions>
+                    <Setter Property="SelectionBrush" Value="{DynamicResource {x:Static SystemColors.InactiveSelectionHighlightBrushKey}}"/>
+                </MultiTrigger>
+            </Style.Triggers>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="img/mrn.jpg"/>
+        </Grid.Background>
+        <Image Margin="0,0,0,339" Source="img/broe.JPG" Stretch="Fill" RenderTransformOrigin="-0.087,1.891"/>
+        <Image Margin="24,2,505,352" Source="img/top.JPG" Stretch="Fill" Width="155" RenderTransformOrigin="0.619,0.462"/>
+        <Image Margin="48,137,46,20" Source="img/111.PNG" Stretch="Fill"/>
+        <Label Content="Category: Cosmetics for men" HorizontalAlignment="Left" Margin="48,137,0,0" VerticalAlignment="Top" FontSize="18" FontFamily="Segoe Print" Background="White" Foreground="#FFB0B0B0"/>
+        <Image x:Name="Back_men" Margin="10,10,655,372" Source="img/Undo-Transparent-Bac.png" Stretch="Fill" RenderTransformOrigin="0.789,1.429" Opacity="0.5" MouseLeftButtonUp="Back_men_MouseLeftButtonUp"/>
+        <ComboBox x:Name="ComBom" HorizontalAlignment="Left" Height="25" Margin="130,98,0,0" VerticalAlignment="Top" Width="441" SelectionChanged="ComBom_SelectionChanged"/>
+        <DataGrid x:Name="bran" HorizontalAlignment="Left" Height="189" Margin="59,184,0,0" VerticalAlignment="Top" Width="567"/>
+        <Button Content="Place an order" HorizontalAlignment="Left" Height="23" Margin="595,24,0,0" VerticalAlignment="Top" Width="79" Click="Button_Click"/>
+        <Button Content="Delete" HorizontalAlignment="Left" Height="23" Margin="495,24,0,0" VerticalAlignment="Top" Width="76" Click="Button_Click_2"/>
+
+    </Grid>
+</Window>
